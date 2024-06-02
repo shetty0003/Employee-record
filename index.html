@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Records</title>
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">The New Health Hospital - Employee Records</h1>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="image">
+                    <img src="pic1.jpg" class="img-fluid w-100" alt="Hospital Image">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form action="get">
+                    <div class="form">
+                        <div class="one mb-3">
+                            <p>Section 1: Employee Profile</p>
+                            <label for="firstname">First Name:</label><br />
+                            <input id="firstname" type="text" minlength="3" maxlength="20" required class="form-control mb-2"><br />
+
+                            <label for="lastname">Last Name:</label><br />
+                            <input id="lastname" type="text" minlength="3" maxlength="20" required class="form-control mb-2"><br />
+        
+                            <label for="phone">Phone Number:</label><br />
+                            <input id="phone" type="text" placeholder="+234" class="form-control mb-2"><br />
+        
+                            <label for="email">Email:</label><br />
+                            <input id="email" type="email" required class="form-control mb-2"><br />
+
+                            <label for="dob">Date of Birth:</label><br />
+                            <input id="dob" type="date" required class="form-control mb-2"><br />
+        
+                            <label for="address">Residential Address:</label><br />
+                            <textarea id="address" rows="5" class="form-control mb-2" minlength="20" maxlength="100"></textarea><br />
+                        </div>
+                        <hr>
+                        <div class="two mb-3">
+                            <p>Section 2: Employment Details</p>
+                            <label for="employee_id">Employee ID:</label><br />
+                            <input id="employee_id" type="text" required class="form-control mb-2"><br />
+
+                            <label for="department">Department:</label><br />
+                            <input id="department" type="text" required class="form-control mb-2"><br />
+        
+                            <label for="position">Position:</label><br />
+                            <input id="position" type="text" required class="form-control mb-2"><br />
+        
+                            <label for="hire_date">Date of Hire:</label><br />
+                            <input id="hire_date" type="date" required class="form-control mb-2"><br /><br />
+                            
+                            <label for="employment_type">Employment Type:</label><br />
+                            <select id="employment_type" class="form-control mb-2">
+                                <option value="full_time">Full-time</option>
+                                <option value="part_time">Part-time</option>
+                                <option value="contract">Contract</option>
+                            </select><br /><br />
+                        </div>
+                        <hr>
+                        <div class="three mb-3">
+                            <p>Section 3: Employee Consent</p>
+                            <input id="agree" type="checkbox" required> I consent to the use of my information for employment and administrative purposes. <br />
+                        </div>
+
+                        <button type="submit" name="submit" class="btn btn-primary">Add New Record</button>
+                        <button type="reset" onclick="cancel()" class="btn btn-secondary">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cancel() {
+            
+            alert("Record Submission Cancelled");
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
